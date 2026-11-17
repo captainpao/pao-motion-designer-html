@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motion Designer</title>
+    <link rel="icon" href="assets/favicon-16x16.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="vendor/gsap.min.js"></script>
+    <script type="module" src="src/app.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- player controls, bottom-right; shown by src/app.js on a deck page -->
+    <nav class="controls" aria-label="Slide controls" hidden>
+      <button data-act="prev" aria-label="Previous slide (←)" title="Previous (←)"></button>
+      <span class="controls__count" aria-live="polite"></span>
+      <button data-act="next" aria-label="Next slide (→)" title="Next (→)"></button>
+      <span class="controls__sep"></span>
+      <button data-act="auto" aria-label="Autoplay (A)" title="Autoplay (A)"></button>
+      <button data-act="music" aria-label="Music (M)"></button>
+      <button data-act="record" aria-label="Record mp4 (R)"></button>
+      <button data-act="fs" aria-label="Fullscreen (F)" title="Fullscreen (F)"></button>
+    </nav>
+  </body>
+</html>
